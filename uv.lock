@@ -365,7 +365,7 @@ wheels = [
 [[package]]
 name = "electricity-analytics"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "entsoe-py" },
     { name = "matplotlib" },
@@ -379,9 +379,6 @@ dev = [
 ]
 
 [package.dev-dependencies]
-dev = [
-    { name = "python-dotenv" },
-]
 notebook = [
     { name = "ipykernel" },
     { name = "notebook" },
@@ -398,7 +395,6 @@ requires-dist = [
 provides-extras = ["dev"]
 
 [package.metadata.requires-dev]
-dev = [{ name = "python-dotenv", specifier = ">=1.0.0" }]
 notebook = [
     { name = "ipykernel", specifier = ">=6.0.0" },
     { name = "notebook", specifier = ">=7.0.0" },
